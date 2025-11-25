@@ -5,7 +5,7 @@
 本题是一道pwn与crypto结合的沙箱逃逸类型题目，题目使用rust编写，主要逻辑如下：
 
 1. 使用流密码加密所有的输入输出
-2. 解密被加密的`/config/config.enc`，提取沙箱的配置文件`/tmp/box_conifg`
+2. 解密（已给出源码）被加密的`/config/config.enc`，提取沙箱的配置文件`/tmp/box_conifg`
 3. 侧信道攻击登录密码获取`Admin`权限
 4. 进入`shellcode`功能执行
 5. 打印沙箱配置文件
